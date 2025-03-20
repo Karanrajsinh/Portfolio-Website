@@ -1,8 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
 import { ShimmerButton } from "./ui/shimmer-button"
-import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react"
 
 export function Footer() {
     const scrollToTop = () => {
