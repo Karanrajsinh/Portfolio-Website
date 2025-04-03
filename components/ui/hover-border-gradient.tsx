@@ -35,14 +35,18 @@ export function HoverBorderGradient({
         return directions[nextIndex];
     };
 
+
     const movingMap: Record<Direction, string> = {
-        TOP: "radial-gradient(20.7% 50% at 50% 0%, rgb(8 145 178) 0%, rgba(255, 255, 255, 0) 100%)",
-        LEFT: "radial-gradient(16.6% 43.1% at 0% 50%, rgb(8 145 178) 0%, rgba(255, 255, 255, 0) 100%)",
-        BOTTOM: "radial-gradient(20.7% 50% at 50% 100%, rgb(8 145 178) 0%, rgba(255, 255, 255, 0) 100%)",
-        RIGHT: "radial-gradient(16.2% 41.2% at 100% 50%, rgb(8 145 178) 0%, rgba(255, 255, 255, 0) 100%)",
+        TOP: "radial-gradient(20.7% 50% at 50% 0%, rgb(34 211 238) 0%, rgba(255, 255, 255, 0) 100%)",
+        LEFT: "radial-gradient(16.6% 43.1% at 0% 50%, rgb(34 211 238) 0%, rgba(255, 255, 255, 0) 100%)",
+        BOTTOM:
+            "radial-gradient(20.7% 50% at 50% 100%, rgb(34 211 238) 0%, rgba(255, 255, 255, 0) 100%)",
+        RIGHT:
+            "radial-gradient(16.2% 41.199999999999996% at 100% 50%, rgb(34 211 238) 0%, rgba(255, 255, 255, 0) 100%)",
     };
 
-    const highlight = "radial-gradient(75% 181.15942028985506% at 50% 50%, rgb(8 145 178) 0%, rgba(255, 255, 255, 0) 100%)"; // cyan-600 color
+    const highlight =
+        "radial-gradient(75% 181.15942028985506% at 50% 50%, #3275F8 0%, rgba(255, 255, 255, 0) 100%)";
 
     useEffect(() => {
         if (!hovered) {
@@ -74,7 +78,7 @@ export function HoverBorderGradient({
             <motion.div
                 className="flex-none inset-0 overflow-hidden absolute z-0 rounded-[inherit]"
                 style={{
-                    filter: "blur(2px)",
+                    filter: "blur(5px) brightness(2.5)",
                     position: "absolute",
                     width: "100%",
                     height: "100%",

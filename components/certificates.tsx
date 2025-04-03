@@ -32,14 +32,6 @@ const certificates = [
 export function Certificates() {
   return (
     <section id="certificates" className="py-24 relative overflow-hidden">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
-        className="absolute inset-0 -z-10"
-      >
-        <div className="h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" />
-      </motion.div>
 
       <div className="container px-4">
         <motion.div

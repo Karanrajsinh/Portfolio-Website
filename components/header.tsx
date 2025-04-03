@@ -68,9 +68,26 @@ export function Header() {
         <Link
           href="#home"
           onClick={() => handleNavClick("#home")}
-          className="text-xl md:text-2xl font-bold font-heading"
+          className="relative flex items-center"
         >
-          Karanrajsinh Vaghela
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            className="text-foreground"
+            aria-label="KV Logo"
+          >
+            <text
+              x="50%"
+              y="50%"
+              dominantBaseline="middle"
+              textAnchor="middle"
+              fill="currentColor"
+              className="font-bold text-xl"
+            >
+              KV
+            </text>
+          </svg>
         </Link>
 
         {/* Desktop Navigation */}

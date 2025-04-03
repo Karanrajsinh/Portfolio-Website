@@ -17,7 +17,7 @@ export default function TimelineDemo() {
                         </p>
                         <div className="mt-4">
                             <ul className="list-disc list-inside space-y-2 text-neutral-700 dark:text-neutral-300 text-sm lg:text-base">
-                                <li>Successfully merged PR #2114 addressing frontend layout issues</li>
+                                <li>Successfully merged PR addressing frontend layout issues</li>
                                 <li>Fixed spacing and overflow problems on mobile screens</li>
                                 <li>Implemented reusable scroll components for better performance</li>
                             </ul>
