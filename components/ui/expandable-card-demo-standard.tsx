@@ -276,7 +276,7 @@ const cards = [
         title: "MyFoodRecipes",
         src: "/images/projects/MyFoodRecipes.png",
         ctaText: "View Project",
-        ctaLink: "https://food-recipe-app36580.web.app",
+        ctaLink: "https://food-recipe-app-36580.web.app",
         content: () => {
             return (
                 <div className="space-y-4">
