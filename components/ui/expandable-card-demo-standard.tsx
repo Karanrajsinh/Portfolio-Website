@@ -195,6 +195,82 @@ export const CloseIcon = () => {
 
 const cards = [
     {
+        description: "AI-Powered Resume Builder",
+        title: "AI-GEN CV",
+        src: "/images/projects/AI-GEN CV.png",
+        ctaText: "View Project",
+        ctaLink: "https://aigencv.vercel.app",
+        content: () => {
+            return (
+                <div className="space-y-4">
+                    <p>
+                        Built a full-stack resume builder application with AI-powered content generation capabilities.
+                        The platform features OAuth authentication, real-time editing, and PDF generation.
+                    </p>
+                    <div>
+                        <p className="font-medium mb-2">Key Features:</p>
+                        <ul className="list-disc list-inside space-y-1">
+                            <li>AI-powered content suggestions using Gemini API</li>
+                            <li>OAuth authentication with Supabase</li>
+                            <li>Real-time resume editing and preview</li>
+                            <li>PDF generation with custom styling</li>
+                        </ul>
+                    </div>
+                    <p>
+                        <span className="font-medium">Technologies:</span>{" "}
+                        <a
+                            href="https://nextjs.org"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary hover:underline"
+                        >
+                            Next.js
+                        </a>
+                        , TypeScript, Tailwind CSS, Supabase SSR, Gemini API, Puppeteer, Node.js
+                    </p>
+                </div>
+            );
+        },
+    },
+    {
+        description: "Google Search Console Reporting Tool",
+        title: "GSC Reportify",
+        src: "/images/projects/GSCReportify.png",
+        ctaText: "View Project",
+        ctaLink: "https://gsc-reportify.vercel.app",
+        content: () => {
+            return (
+                <div className="space-y-4">
+                    <p>
+                        Built an interactive web app that turns Google Search Console data into customizable reports.
+                        Focused on delivering insights through a clean UI and automated query analysis.
+                    </p>
+                    <div>
+                        <p className="font-medium mb-2">Key Features:</p>
+                        <ul className="list-disc list-inside space-y-1">
+                            <li>Drag-and-drop report customization using @dnd-kit</li>
+                            <li>Google OAuth integration via Clerk</li>
+                            <li>AI-powered query intent analysis using Gemini AI</li>
+                            <li>Backend powered by Prisma ORM and MongoDB</li>
+                        </ul>
+                    </div>
+                    <p>
+                        <span className="font-medium">Technologies:</span>{" "}
+                        <a
+                            href="https://nextjs.org"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary hover:underline"
+                        >
+                            Next.js
+                        </a>
+                        , TypeScript, Tailwind CSS, Clerk, Prisma ORM, MongoDB, Gemini AI
+                    </p>
+                </div>
+            );
+        },
+    },
+    {
         description: "Task Management Platform",
         title: "Task Manager",
         src: "/images/projects/Task-Manager.png",
@@ -228,44 +304,6 @@ const cards = [
                             Next.js
                         </a>
                         , TypeScript, Tailwind CSS, ShadCN UI, Tanstack Query
-                    </p>
-                </div>
-            );
-        },
-    },
-    {
-        description: "AI-Powered Resume Builder",
-        title: "AI-GEN CV",
-        src: "/images/projects/AI-GEN CV.png",
-        ctaText: "View Project",
-        ctaLink: "https://aigencv.vercel.app",
-        content: () => {
-            return (
-                <div className="space-y-4">
-                    <p>
-                        Built a full-stack resume builder application with AI-powered content generation capabilities.
-                        The platform features OAuth authentication, real-time editing, and PDF generation.
-                    </p>
-                    <div>
-                        <p className="font-medium mb-2">Key Features:</p>
-                        <ul className="list-disc list-inside space-y-1">
-                            <li>AI-powered content suggestions using Gemini API</li>
-                            <li>OAuth authentication with Supabase</li>
-                            <li>Real-time resume editing and preview</li>
-                            <li>PDF generation with custom styling</li>
-                        </ul>
-                    </div>
-                    <p>
-                        <span className="font-medium">Technologies:</span>{" "}
-                        <a
-                            href="https://nextjs.org"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-primary hover:underline"
-                        >
-                            Next.js
-                        </a>
-                        , TypeScript, Tailwind CSS, Supabase SSR, Gemini API, Puppeteer, Node.js
                     </p>
                 </div>
             );
@@ -308,5 +346,6 @@ const cards = [
                 </div>
             );
         },
-    },
+    }
+
 ];
