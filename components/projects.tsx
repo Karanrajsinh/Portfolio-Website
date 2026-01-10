@@ -30,7 +30,7 @@ export function Projects() {
             transition={{ duration: 0.5, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            Here are some of my recent projects that showcase my skills and experience
+            Some Of My Personal Projects That I Have Worked On
           </motion.p>
         </div>
 

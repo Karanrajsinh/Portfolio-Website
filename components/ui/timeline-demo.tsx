@@ -6,6 +6,48 @@ import { Timeline } from "./timeline";
 export default function TimelineDemo() {
     const data = [
         {
+            title: "Jul 2025",
+            content: (
+                <div className="space-y-4">
+                    <div>
+                        <h3 className="text-lg font-semibold text-foreground">Software Engineer - GetFleet.ai</h3>
+                        <p className="text-sm lg:text-base text-muted-foreground mb-4">Dubai, United Arab Emirates · Remote</p>
+                        <p className="text-neutral-800 dark:text-neutral-200 text-sm lg:text-base">
+                            Led development of core Fleet Product Website and mobile app, architecting modules, integrating real-time features, ensuring responsive design, and guiding team.
+                        </p>
+                        <div className="mt-4">
+                            <ul className="list-disc list-inside space-y-2 text-neutral-700 dark:text-neutral-300 text-sm lg:text-base">
+                                <li>Architected 6 Figma modules with reusable components, API/WebSocket integration using Next.js, TypeScript, Tailwind, Shadcn.</li>
+                                <li>Built lightweight UI for Google Maps vehicle tracking with role-based access control.</li>
+                                <li>Reviewed/optimized codebase; extended to React Native Expo app (3 modules) with React Native Paper; mentored team on cross-platform development.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            ),
+        },
+        {
+            title: "Apr 2025",
+            content: (
+                <div className="space-y-4">
+                    <div>
+                        <h3 className="text-lg font-semibold text-foreground">Lead Developer - Echallan.ai</h3>
+                        <p className="text-sm lg:text-base text-muted-foreground mb-4">Gurugram , India - Remote</p>
+                        <p className="text-neutral-800 dark:text-neutral-200 text-sm lg:text-base">
+                            Led development team building vehicle management platform with RC Department API integration, automated document tracking, and admin dashboard for real-time renewal monitoring.
+                        </p>
+                        <div className="mt-4">
+                            <ul className="list-disc list-inside space-y-2 text-neutral-700 dark:text-neutral-300 text-sm lg:text-base">
+                                <li>Managed team of two developers with task assignments and code reviews.</li>
+                                <li>Integrated RC Department API using Prisma ORM, PostgreSQL, AWS, and Object Store.</li>
+                                <li>Built admin dashboard with live vehicle tracking and automated renewal scheduling.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            ),
+        },
+        {
             title: "Jan 2025",
             content: (
                 <div className="space-y-4">
@@ -32,7 +74,7 @@ export default function TimelineDemo() {
                 <div className="space-y-4">
                     <div>
                         <h3 className="text-lg font-semibold text-foreground">Next.js Developer Intern - WorkBinders</h3>
-                        <p className="text-sm lg:text-base text-muted-foreground mb-4">Remote (Rajasthan)</p>
+                        <p className="text-sm lg:text-base text-muted-foreground mb-4">Rajasthan , India - Remote</p>
                         <p className="text-neutral-800 dark:text-neutral-200 text-sm lg:text-base">
                             Developed and maintained frontend applications using Next.js and modern web technologies.
                         </p>
@@ -54,7 +96,7 @@ export default function TimelineDemo() {
                 <div className="space-y-4">
                     <div>
                         <h3 className="text-lg font-semibold text-foreground">Social Summer Intern - Atmiya University</h3>
-                        <p className="text-sm lg:text-base text-muted-foreground mb-4">Rajkot</p>
+                        <p className="text-sm lg:text-base text-muted-foreground mb-4">Rajkot , India - Hybrid</p>
                         <p className="text-neutral-800 dark:text-neutral-200 text-sm lg:text-base">
                             Designed and developed a university E-Library platform to improve student access to educational resources.
                         </p>

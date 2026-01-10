@@ -18,7 +18,7 @@ export function Experience() {
             Professional Experience
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-sm md:text-base">
-            My journey in web development, from internships to open-source contributions
+            My Journey in the Frontend Development World
           </p>
         </motion.div>
 
