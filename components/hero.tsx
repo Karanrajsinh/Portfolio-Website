@@ -74,7 +74,7 @@ export function Hero() {
               variant="ghost"
               className="bg-primary/10 hover:bg-primary/20 text-primary w-fit px-6 py-6 rounded-full flex items-center gap-2 transition-colors"
             >
-              <a href="/Resume.pdf" download="Karanrajsinh-Resume.pdf">
+              <a href="/Karanrajsinh-Vaghela-CV.pdf" download="Karanrajsinh-Vaghela-CV.pdf">
                 Download CV
                 <svg
                   className="w-4 h-4"
