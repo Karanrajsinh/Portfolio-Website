@@ -7,14 +7,32 @@ export default function AdminPage() {
   const [unlocked, setUnlocked] = useState(false);
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const handleUnlock = () => {
-    const expected = process.env.NEXT_PUBLIC_ADMIN_PAGE_PASSWORD;
-    if (expected && password === expected) {
-      setUnlocked(true);
-      setError("");
-    } else {
-      setError("Incorrect password.");
+  const handleUnlock = async () => {
+    if (!password) return;
+    setLoading(true);
+    setError("");
+
+    try {
+      const res = await fetch("/api/verify-password", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ password }),
+      });
+
+      if (res.ok) {
+        setUnlocked(true);
+      } else {
+        const data = await res.json();
+        setError(data.error || "Incorrect password.");
+      }
+    } catch (err) {
+      setError("An error occurred verifying the password.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -28,13 +46,15 @@ export default function AdminPage() {
             onChange={(e) => setPassword(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && handleUnlock()}
             placeholder="Password"
-            className="px-3 py-2 rounded-md bg-neutral-900 text-neutral-100 border border-neutral-700 focus:outline-none focus:border-neutral-500"
+            disabled={loading}
+            className="px-3 py-2 rounded-md bg-neutral-900 text-neutral-100 border border-neutral-700 focus:outline-none focus:border-neutral-500 disabled:opacity-50"
           />
           <button
             onClick={handleUnlock}
-            className="px-3 py-2 rounded-md bg-neutral-800 text-neutral-100 hover:bg-neutral-700"
+            disabled={loading}
+            className="px-3 py-2 rounded-md bg-neutral-800 text-neutral-100 hover:bg-neutral-700 disabled:opacity-50"
           >
-            Unlock
+            {loading ? "Verifying..." : "Unlock"}
           </button>
           {error && <p className="text-sm text-red-400">{error}</p>}
         </div>
@@ -44,7 +64,7 @@ export default function AdminPage() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-black">
-      <ResumeUploader />
+      <ResumeUploader password={password} />
     </div>
   );
 }

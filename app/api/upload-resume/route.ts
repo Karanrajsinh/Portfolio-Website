@@ -6,7 +6,7 @@ import resumeData from "@/data/resume.json";
 
 export async function POST(req: NextRequest) {
   try {
-    const requiredSecret = process.env.RESUME_UPLOAD_SECRET;
+    const requiredSecret = process.env.ADMIN_PASSWORD;
     if (requiredSecret) {
       const provided = req.headers.get("x-upload-secret");
       if (provided !== requiredSecret) {

@@ -4,7 +4,11 @@ import { useState } from "react";
 
 type Status = "idle" | "uploading" | "success" | "error";
 
-export default function ResumeUploader() {
+interface ResumeUploaderProps {
+  password: string;
+}
+
+export default function ResumeUploader({ password }: ResumeUploaderProps) {
   const [status, setStatus] = useState<Status>("idle");
   const [message, setMessage] = useState("");
 
@@ -37,7 +41,7 @@ export default function ResumeUploader() {
       const res = await fetch("/api/upload-resume", {
         method: "POST",
         headers: {
-          "x-upload-secret": process.env.NEXT_PUBLIC_RESUME_UPLOAD_SECRET || "",
+          "x-upload-secret": password,
         },
         body: formData,
       });
