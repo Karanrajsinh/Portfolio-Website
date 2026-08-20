@@ -1,0 +1,85 @@
+{
+  "hero": {
+    "name": "Karanrajsinh Vaghela",
+    "title": "",
+    "tagline": ""
+  },
+  "experience": [
+    {
+      "date": "July 2025 – Present",
+      "role": "Software Engineer",
+      "company": "GetFleet",
+      "location": "Dubai, UAE · Remote",
+      "summary": "",
+      "highlights": [
+        "Designed and delivered three production products in under a year — a fleet SaaS dashboard, a cross-platform mobile app (Android & iOS), and an ERP frontend — solely owning architecture, UI consistency, and deployment from scratch.",
+        "Built an agentic AI development workflow using a 7-agent orchestration pipeline that cut ERP module delivery from days of manual coding to 10-20 minutes, generating 5000+ lines of production-ready code per run.",
+        "Designed a 4-layer shared architecture across 13 ERP modules so each new module could be added without touching existing code, with reusable UI primitives reducing the effort needed to build each new screen significantly.",
+        "Automated procurement and sales document workflows entirely in the frontend, replacing a manual multi-step process and enabling users to complete the full approval cycle without leaving the app."
+      ]
+    },
+    {
+      "date": "April 2025 – May 2025",
+      "role": "Lead Developer",
+      "company": "Echallan.ai",
+      "location": "Gurugram, India · Remote",
+      "summary": "",
+      "highlights": [
+        "Automated vehicle document tracking by integrating directly with the RTO RC Department, eliminating manual data entry for operators and enabling bulk vehicle onboarding that previously required individual lookups.",
+        "Built a renewal scheduling system with user-defined dynamic columns, giving ops teams the ability to configure their own tracking workflows without engineering involvement.",
+        "Ran structured code reviews for a two-person team, enforcing consistent patterns and catching issues before they reached production."
+      ]
+    },
+    {
+      "date": "Dec 2024 – Jan 2025",
+      "role": "Next.js Developer Intern",
+      "company": "WorkBinders",
+      "location": "Rajasthan, India · Remote",
+      "summary": "",
+      "highlights": [
+        "Shipped 40+ Figma designs as production-ready screens with pixel-accurate layouts and responsive behaviour, completing the full frontend in six weeks.",
+        "Structured the component library from scratch so every page shared a unified visual language, eliminating inconsistency across the product."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "RxResume",
+      "description": "Contributed a merged PR to a 25k-star open-source resume builder, resolving mobile layout regressions that affected the core preview panel for a large portion of the user base.",
+      "image": "",
+      "ctaText": "View Project",
+      "ctaLink": "",
+      "overview": "Contributed a merged PR to a 25k-star open-source resume builder, resolving mobile layout regressions that affected the core preview panel for a large portion of the user base.",
+      "keyFeatures": [
+        "Contributed a merged PR to a 25k-star open-source resume builder, resolving mobile layout regressions that affected the core preview panel for a large portion of the user base."
+      ],
+      "technologies": []
+    },
+    {
+      "title": "AI-GEN CV",
+      "description": "Built a full-stack AI resume builder that cuts creation time from 10–15 mins to under 5 mins by generating ATS-optimised experience and project copy using Gemini AI, with one-click PDF export.",
+      "image": "/images/projects/AI-GEN CV.png",
+      "ctaText": "View Project",
+      "ctaLink": "https://aigencv.vercel.app",
+      "overview": "Built a full-stack AI resume builder that cuts creation time from 10–15 mins to under 5 mins by generating ATS-optimised experience and project copy using Gemini AI, with one-click PDF export.",
+      "keyFeatures": [
+        "Built a full-stack AI resume builder that cuts creation time from 10–15 mins to under 5 mins by generating ATS-optimised experience and project copy using Gemini AI, with one-click PDF export."
+      ],
+      "technologies": [
+        "Gemini AI"
+      ]
+    },
+    {
+      "title": "GSC Reportify",
+      "description": "Converted raw Google Search Console exports into shareable, customisable dashboards with AI-powered query categorisation and drag-and-drop report layout, removing the need for manual spreadsheet analysis.",
+      "image": "/images/projects/GSCReportify.png",
+      "ctaText": "View Project",
+      "ctaLink": "https://gsc-reportify.vercel.app",
+      "overview": "Converted raw Google Search Console exports into shareable, customisable dashboards with AI-powered query categorisation and drag-and-drop report layout, removing the need for manual spreadsheet analysis.",
+      "keyFeatures": [
+        "Converted raw Google Search Console exports into shareable, customisable dashboards with AI-powered query categorisation and drag-and-drop report layout, removing the need for manual spreadsheet analysis."
+      ],
+      "technologies": []
+    }
+  ]
+}
