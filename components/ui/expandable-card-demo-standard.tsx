@@ -5,6 +5,7 @@ import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import { TailwindConnectButton } from "./tailwind-connect-button";
+import resumeData from "@/data/resume.json";
 
 export default function ExpandableCardDemo() {
     const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(null);
@@ -193,159 +194,35 @@ export const CloseIcon = () => {
     );
 };
 
-const cards = [
-    {
-        description: "AI-Powered Resume Builder",
-        title: "AI-GEN CV",
-        src: "/images/projects/AI-GEN CV.png",
-        ctaText: "View Project",
-        ctaLink: "https://aigencv.vercel.app",
-        content: () => {
-            return (
-                <div className="space-y-4">
-                    <p>
-                        Built a full-stack resume builder application with AI-powered content generation capabilities.
-                        The platform features OAuth authentication, real-time editing, and PDF generation.
-                    </p>
+const cards = resumeData.projects.map((project) => ({
+    description: project.description,
+    title: project.title,
+    src: project.image || "/images/projects/default.png",
+    ctaText: project.ctaText || "View Project",
+    ctaLink: project.ctaLink || "#",
+    content: () => {
+        return (
+            <div className="space-y-4">
+                <p>
+                    {project.overview}
+                </p>
+                {project.keyFeatures && project.keyFeatures.length > 0 && (
                     <div>
                         <p className="font-medium mb-2">Key Features:</p>
                         <ul className="list-disc list-inside space-y-1">
-                            <li>AI-powered content suggestions using Gemini API</li>
-                            <li>OAuth authentication with Supabase</li>
-                            <li>Real-time resume editing and preview</li>
-                            <li>PDF generation with custom styling</li>
+                            {project.keyFeatures.map((feature, idx) => (
+                                <li key={idx}>{feature}</li>
+                            ))}
                         </ul>
                     </div>
+                )}
+                {project.technologies && project.technologies.length > 0 && (
                     <p>
                         <span className="font-medium">Technologies:</span>{" "}
-                        <a
-                            href="https://nextjs.org"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-primary hover:underline"
-                        >
-                            Next.js
-                        </a>
-                        , TypeScript, Tailwind CSS, Supabase SSR, Gemini API, Puppeteer, Node.js
+                        {project.technologies.join(", ")}
                     </p>
-                </div>
-            );
-        },
+                )}
+            </div>
+        );
     },
-    {
-        description: "Google Search Console Reporting Tool",
-        title: "GSC Reportify",
-        src: "/images/projects/GSCReportify.png",
-        ctaText: "View Project",
-        ctaLink: "https://gsc-reportify.vercel.app",
-        content: () => {
-            return (
-                <div className="space-y-4">
-                    <p>
-                        Built an interactive web app that turns Google Search Console data into customizable reports.
-                        Focused on delivering insights through a clean UI and automated query analysis.
-                    </p>
-                    <div>
-                        <p className="font-medium mb-2">Key Features:</p>
-                        <ul className="list-disc list-inside space-y-1">
-                            <li>Drag-and-drop report customization using @dnd-kit</li>
-                            <li>Google OAuth integration via Clerk</li>
-                            <li>AI-powered query intent analysis using Gemini AI</li>
-                            <li>Backend powered by Prisma ORM and MongoDB</li>
-                        </ul>
-                    </div>
-                    <p>
-                        <span className="font-medium">Technologies:</span>{" "}
-                        <a
-                            href="https://nextjs.org"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-primary hover:underline"
-                        >
-                            Next.js
-                        </a>
-                        , TypeScript, Tailwind CSS, Clerk, Prisma ORM, MongoDB, Gemini AI
-                    </p>
-                </div>
-            );
-        },
-    },
-    {
-        description: "Task Management Platform",
-        title: "Task Manager",
-        src: "/images/projects/Task-Manager.png",
-        ctaText: "View Project",
-        ctaLink: "https://task-manager-kv.vercel.app",
-        content: () => {
-            return (
-                <div className="space-y-4">
-                    <p>
-                        Developed a comprehensive task management platform with features including task CRUD operations,
-                        project categorization, calendar view, and dashboard insights. The application leverages modern
-                        web technologies to provide a seamless user experience.
-                    </p>
-                    <div>
-                        <p className="font-medium mb-2">Key Features:</p>
-                        <ul className="list-disc list-inside space-y-1">
-                            <li>Task organization with project categorization</li>
-                            <li>Calendar view for timeline visualization</li>
-                            <li>Dashboard with task insights and analytics</li>
-                            <li>Advanced search with filtering and sorting</li>
-                        </ul>
-                    </div>
-                    <p>
-                        <span className="font-medium">Technologies:</span>{" "}
-                        <a
-                            href="https://nextjs.org"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-primary hover:underline"
-                        >
-                            Next.js
-                        </a>
-                        , TypeScript, Tailwind CSS, ShadCN UI, Tanstack Query
-                    </p>
-                </div>
-            );
-        },
-    },
-    {
-        description: "Recipe Sharing Platform",
-        title: "MyFoodRecipes",
-        src: "/images/projects/MyFoodRecipes.png",
-        ctaText: "View Project",
-        ctaLink: "https://food-recipe-app-36580.web.app",
-        content: () => {
-            return (
-                <div className="space-y-4">
-                    <p>
-                        Developed a multi-user recipe platform that allows users to share, discover, and save recipes.
-                        The application includes features for recipe management and real-time updates.
-                    </p>
-                    <div>
-                        <p className="font-medium mb-2">Key Features:</p>
-                        <ul className="list-disc list-inside space-y-1">
-                            <li>User authentication and profile management</li>
-                            <li>Recipe creation and sharing</li>
-                            <li>Advanced search and filtering system</li>
-                            <li>Real-time updates with React Query</li>
-                        </ul>
-                    </div>
-                    <p>
-                        <span className="font-medium">Technologies:</span>{" "}
-                        <a
-                            href="https://react.dev"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-primary hover:underline"
-                        >
-                            React.js
-                        </a>
-                        , Vite, Firebase, React Query, Tailwind CSS
-                    </p>
-                </div>
-            );
-        },
-    }
-
-];
+}));

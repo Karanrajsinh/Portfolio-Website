@@ -1,0 +1,160 @@
+{
+  "hero": {
+    "name": "Karanrajsinh",
+    "title": "Software Engineer",
+    "tagline": "Building scalable web applications and intuitive user experiences."
+  },
+  "experience": [
+    {
+      "date": "Jul 2025",
+      "role": "Software Engineer",
+      "company": "GetFleet.ai",
+      "location": "Dubai, United Arab Emirates · Remote",
+      "summary": "Led development of core Fleet Product Website and mobile app, architecting modules, integrating real-time features, ensuring responsive design, and guiding team.",
+      "highlights": [
+        "Architected 6 Figma modules with reusable components, API/WebSocket integration using Next.js, TypeScript, Tailwind, Shadcn.",
+        "Built lightweight UI for Google Maps vehicle tracking with role-based access control.",
+        "Reviewed/optimized codebase; extended to React Native Expo app (3 modules) with React Native Paper; mentored team on cross-platform development."
+      ]
+    },
+    {
+      "date": "Apr 2025",
+      "role": "Lead Developer",
+      "company": "Echallan.ai",
+      "location": "Gurugram , India - Remote",
+      "summary": "Led development team building vehicle management platform with RC Department API integration, automated document tracking, and admin dashboard for real-time renewal monitoring.",
+      "highlights": [
+        "Managed team of two developers with task assignments and code reviews.",
+        "Integrated RC Department API using Prisma ORM, PostgreSQL, AWS, and Object Store.",
+        "Built admin dashboard with live vehicle tracking and automated renewal scheduling."
+      ]
+    },
+    {
+      "date": "Jan 2025",
+      "role": "Open Source Contributor",
+      "company": "RxResume",
+      "location": "Remote",
+      "summary": "Contributed to an open-source resume builder project, improving its mobile responsiveness and user experience.",
+      "highlights": [
+        "Successfully merged PR addressing frontend layout issues",
+        "Fixed spacing and overflow problems on mobile screens",
+        "Implemented reusable scroll components for better performance"
+      ]
+    },
+    {
+      "date": "Dec 2024",
+      "role": "Next.js Developer Intern",
+      "company": "WorkBinders",
+      "location": "Rajasthan , India - Remote",
+      "summary": "Developed and maintained frontend applications using Next.js and modern web technologies.",
+      "highlights": [
+        "Built responsive components from scratch for improved reusability",
+        "Implemented custom animations and integrated REST APIs",
+        "Translated 40+ Figma screens into pixel-perfect layouts",
+        "Focused on mobile-first design principles and UI consistency"
+      ]
+    },
+    {
+      "date": "Apr 2023",
+      "role": "Social Summer Intern",
+      "company": "Atmiya University",
+      "location": "Rajkot , India - Hybrid",
+      "summary": "Designed and developed a university E-Library platform to improve student access to educational resources.",
+      "highlights": [
+        "Created an intuitive interface using HTML, CSS, and JavaScript",
+        "Implemented responsive design with Bootstrap framework",
+        "Developed search and filter functionality for easy resource discovery"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "AI-GEN CV",
+      "description": "AI-Powered Resume Builder",
+      "image": "/images/projects/AI-GEN CV.png",
+      "ctaText": "View Project",
+      "ctaLink": "https://aigencv.vercel.app",
+      "overview": "Built a full-stack resume builder application with AI-powered content generation capabilities. The platform features OAuth authentication, real-time editing, and PDF generation.",
+      "keyFeatures": [
+        "AI-powered content suggestions using Gemini API",
+        "OAuth authentication with Supabase",
+        "Real-time resume editing and preview",
+        "PDF generation with custom styling"
+      ],
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Supabase SSR",
+        "Gemini API",
+        "Puppeteer",
+        "Node.js"
+      ]
+    },
+    {
+      "title": "GSC Reportify",
+      "description": "Google Search Console Reporting Tool",
+      "image": "/images/projects/GSCReportify.png",
+      "ctaText": "View Project",
+      "ctaLink": "https://gsc-reportify.vercel.app",
+      "overview": "Built an interactive web app that turns Google Search Console data into customizable reports. Focused on delivering insights through a clean UI and automated query analysis.",
+      "keyFeatures": [
+        "Drag-and-drop report customization using @dnd-kit",
+        "Google OAuth integration via Clerk",
+        "AI-powered query intent analysis using Gemini AI",
+        "Backend powered by Prisma ORM and MongoDB"
+      ],
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Clerk",
+        "Prisma ORM",
+        "MongoDB",
+        "Gemini AI"
+      ]
+    },
+    {
+      "title": "Task Manager",
+      "description": "Task Management Platform",
+      "image": "/images/projects/Task-Manager.png",
+      "ctaText": "View Project",
+      "ctaLink": "https://task-manager-kv.vercel.app",
+      "overview": "Developed a comprehensive task management platform with features including task CRUD operations, project categorization, calendar view, and dashboard insights. The application leverages modern web technologies to provide a seamless user experience.",
+      "keyFeatures": [
+        "Task organization with project categorization",
+        "Calendar view for timeline visualization",
+        "Dashboard with task insights and analytics",
+        "Advanced search with filtering and sorting"
+      ],
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "ShadCN UI",
+        "Tanstack Query"
+      ]
+    },
+    {
+      "title": "MyFoodRecipes",
+      "description": "Recipe Sharing Platform",
+      "image": "/images/projects/MyFoodRecipes.png",
+      "ctaText": "View Project",
+      "ctaLink": "https://food-recipe-app-36580.web.app",
+      "overview": "Developed a multi-user recipe platform that allows users to share, discover, and save recipes. The application includes features for recipe management and real-time updates.",
+      "keyFeatures": [
+        "User authentication and profile management",
+        "Recipe creation and sharing",
+        "Advanced search and filtering system",
+        "Real-time updates with React Query"
+      ],
+      "technologies": [
+        "React.js",
+        "Vite",
+        "Firebase",
+        "React Query",
+        "Tailwind CSS"
+      ]
+    }
+  ]
+}

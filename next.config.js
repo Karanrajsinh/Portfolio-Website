@@ -1,12 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
   eslint: {
     ignoreDuringBuilds: true,
   },
   images: {
     loader: 'custom',
     loaderFile: './image-loader.js',
+  },
+  experimental: {
+    serverComponentsExternalPackages: ['pdf-parse'],
   },
 };
 
