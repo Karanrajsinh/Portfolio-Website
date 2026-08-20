@@ -1,69 +1,44 @@
 {
   "hero": {
-    "name": "Karanrajsinh",
-    "title": "Software Engineer",
-    "tagline": "Building scalable web applications and intuitive user experiences."
+    "name": "Karanrajsinh Vaghela",
+    "title": "",
+    "tagline": ""
   },
   "experience": [
     {
-      "date": "Jul 2025",
+      "date": "July 2025 – Present",
       "role": "Software Engineer",
-      "company": "GetFleet.ai",
-      "location": "Dubai, United Arab Emirates · Remote",
-      "summary": "Led development of core Fleet Product Website and mobile app, architecting modules, integrating real-time features, ensuring responsive design, and guiding team.",
+      "company": "GetFleet",
+      "location": "Dubai, UAE · Remote",
+      "summary": "",
       "highlights": [
-        "Architected 6 Figma modules with reusable components, API/WebSocket integration using Next.js, TypeScript, Tailwind, Shadcn.",
-        "Built lightweight UI for Google Maps vehicle tracking with role-based access control.",
-        "Reviewed/optimized codebase; extended to React Native Expo app (3 modules) with React Native Paper; mentored team on cross-platform development."
+        "Designed and delivered three production products in under a year — a fleet SaaS dashboard, a cross-platform mobile app (Android & iOS), and an ERP frontend — solely owning architecture, UI consistency, and deployment from scratch.",
+        "Built an agentic AI development workflow using a 7-agent orchestration pipeline that cut ERP module delivery from days of manual coding to 10-20 minutes, generating 5000+ lines of production-ready code per run.",
+        "Designed a 4-layer shared architecture across 13 ERP modules so each new module could be added without touching existing code, with reusable UI primitives reducing the effort needed to build each new screen significantly.",
+        "Automated procurement and sales document workflows entirely in the frontend, replacing a manual multi-step process and enabling users to complete the full approval cycle without leaving the app."
       ]
     },
     {
-      "date": "Apr 2025",
+      "date": "April 2025 – May 2025",
       "role": "Lead Developer",
       "company": "Echallan.ai",
-      "location": "Gurugram , India - Remote",
-      "summary": "Led development team building vehicle management platform with RC Department API integration, automated document tracking, and admin dashboard for real-time renewal monitoring.",
+      "location": "Gurugram, India · Remote",
+      "summary": "",
       "highlights": [
-        "Managed team of two developers with task assignments and code reviews.",
-        "Integrated RC Department API using Prisma ORM, PostgreSQL, AWS, and Object Store.",
-        "Built admin dashboard with live vehicle tracking and automated renewal scheduling."
+        "Automated vehicle document tracking by integrating directly with the RTO RC Department, eliminating manual data entry for operators and enabling bulk vehicle onboarding that previously required individual lookups.",
+        "Built a renewal scheduling system with user-defined dynamic columns, giving ops teams the ability to configure their own tracking workflows without engineering involvement.",
+        "Ran structured code reviews for a two-person team, enforcing consistent patterns and catching issues before they reached production."
       ]
     },
     {
-      "date": "Jan 2025",
-      "role": "Open Source Contributor",
-      "company": "RxResume",
-      "location": "Remote",
-      "summary": "Contributed to an open-source resume builder project, improving its mobile responsiveness and user experience.",
-      "highlights": [
-        "Successfully merged PR addressing frontend layout issues",
-        "Fixed spacing and overflow problems on mobile screens",
-        "Implemented reusable scroll components for better performance"
-      ]
-    },
-    {
-      "date": "Dec 2024",
+      "date": "Dec 2024 – Jan 2025",
       "role": "Next.js Developer Intern",
       "company": "WorkBinders",
-      "location": "Rajasthan , India - Remote",
-      "summary": "Developed and maintained frontend applications using Next.js and modern web technologies.",
+      "location": "Rajasthan, India · Remote",
+      "summary": "",
       "highlights": [
-        "Built responsive components from scratch for improved reusability",
-        "Implemented custom animations and integrated REST APIs",
-        "Translated 40+ Figma screens into pixel-perfect layouts",
-        "Focused on mobile-first design principles and UI consistency"
-      ]
-    },
-    {
-      "date": "Apr 2023",
-      "role": "Social Summer Intern",
-      "company": "Atmiya University",
-      "location": "Rajkot , India - Hybrid",
-      "summary": "Designed and developed a university E-Library platform to improve student access to educational resources.",
-      "highlights": [
-        "Created an intuitive interface using HTML, CSS, and JavaScript",
-        "Implemented responsive design with Bootstrap framework",
-        "Developed search and filter functionality for easy resource discovery"
+        "Shipped 40+ Figma designs as production-ready screens with pixel-accurate layouts and responsive behaviour, completing the full frontend in six weeks.",
+        "Structured the component library from scratch so every page shared a unified visual language, eliminating inconsistency across the product."
       ]
     }
   ],
@@ -74,21 +49,14 @@
       "image": "/images/projects/AI-GEN CV.png",
       "ctaText": "View Project",
       "ctaLink": "https://aigencv.vercel.app",
-      "overview": "Built a full-stack resume builder application with AI-powered content generation capabilities. The platform features OAuth authentication, real-time editing, and PDF generation.",
+      "overview": "Built a full-stack AI resume builder that cuts creation time from 10–15 mins to under 5 mins by generating ATS-optimised experience and project copy using Gemini AI, with one-click PDF export.",
       "keyFeatures": [
-        "AI-powered content suggestions using Gemini API",
-        "OAuth authentication with Supabase",
-        "Real-time resume editing and preview",
-        "PDF generation with custom styling"
+        "Cuts creation time from 10–15 mins to under 5 mins",
+        "Generates ATS-optimised experience and project copy using Gemini AI",
+        "One-click PDF export"
       ],
       "technologies": [
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "Supabase SSR",
-        "Gemini API",
-        "Puppeteer",
-        "Node.js"
+        "Gemini AI"
       ]
     },
     {
@@ -97,63 +65,15 @@
       "image": "/images/projects/GSCReportify.png",
       "ctaText": "View Project",
       "ctaLink": "https://gsc-reportify.vercel.app",
-      "overview": "Built an interactive web app that turns Google Search Console data into customizable reports. Focused on delivering insights through a clean UI and automated query analysis.",
+      "overview": "Converted raw Google Search Console exports into shareable, customisable dashboards with AI-powered query categorisation and drag-and-drop report layout, removing the need for manual spreadsheet analysis.",
       "keyFeatures": [
-        "Drag-and-drop report customization using @dnd-kit",
-        "Google OAuth integration via Clerk",
-        "AI-powered query intent analysis using Gemini AI",
-        "Backend powered by Prisma ORM and MongoDB"
+        "Convert raw Google Search Console exports into shareable, customisable dashboards",
+        "AI-powered query categorisation",
+        "Drag-and-drop report layout"
       ],
       "technologies": [
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "Clerk",
-        "Prisma ORM",
-        "MongoDB",
-        "Gemini AI"
-      ]
-    },
-    {
-      "title": "Task Manager",
-      "description": "Task Management Platform",
-      "image": "/images/projects/Task-Manager.png",
-      "ctaText": "View Project",
-      "ctaLink": "https://task-manager-kv.vercel.app",
-      "overview": "Developed a comprehensive task management platform with features including task CRUD operations, project categorization, calendar view, and dashboard insights. The application leverages modern web technologies to provide a seamless user experience.",
-      "keyFeatures": [
-        "Task organization with project categorization",
-        "Calendar view for timeline visualization",
-        "Dashboard with task insights and analytics",
-        "Advanced search with filtering and sorting"
-      ],
-      "technologies": [
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "ShadCN UI",
-        "Tanstack Query"
-      ]
-    },
-    {
-      "title": "MyFoodRecipes",
-      "description": "Recipe Sharing Platform",
-      "image": "/images/projects/MyFoodRecipes.png",
-      "ctaText": "View Project",
-      "ctaLink": "https://food-recipe-app-36580.web.app",
-      "overview": "Developed a multi-user recipe platform that allows users to share, discover, and save recipes. The application includes features for recipe management and real-time updates.",
-      "keyFeatures": [
-        "User authentication and profile management",
-        "Recipe creation and sharing",
-        "Advanced search and filtering system",
-        "Real-time updates with React Query"
-      ],
-      "technologies": [
-        "React.js",
-        "Vite",
-        "Firebase",
-        "React Query",
-        "Tailwind CSS"
+        "Google Search Console",
+        "AI"
       ]
     }
   ]
